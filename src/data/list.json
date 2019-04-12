@@ -1,0 +1,46 @@
+[
+	{
+		"set": {
+			"id": 1,
+			"title": {
+				"primary": {
+					"Haus": "#F3F4F4",
+					"Night": "#333",
+					"Sur": "#96DBE4",
+					"Sur Dark": "#24828F"
+				}
+			}
+		},
+		"address": "4 rue de la Courtade"
+	},
+	{
+		"set": {
+			"id": 2,
+			"title": {
+				"secondary": {
+					"Peach": "#EFADA0",
+					"Peach Dark": "#E37059",
+					"Pear": "#93DAAB",
+					"Pear Dark": "#2E854B",
+					"Orange Web": "#FF3300",
+					"Azuloscurocasinegro": "#333"
+				}
+			}
+		}
+	},
+	{
+		"set": {
+			"id": 3,
+			"title": {
+				"secondary": {
+					"Peach": "#EFADA0",
+					"Peach Dark": "#E37059",
+					"Pear": "#93DAAB",
+					"Pear Dark": "#2E854B",
+					"Orange Web": "#FF3300",
+					"Azuloscurocasinegro": "#333"
+				}
+			}
+		}
+	}
+]

@@ -1,0 +1,48 @@
+[
+	{
+		"id": 1,
+		"name": "Blue",
+		"items": [
+			{
+				"id": 2,
+				"name": "Kitty Muu Muu"
+			},
+			{
+				"id": 3,
+				"name": "Kitty smack"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "Yello",
+		"items": [
+			{
+				"id": 5,
+				"name": "World",
+				"items": [
+					{
+						"id": 6,
+						"name": "Hello Pussy world"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Green",
+		"items": [
+			{
+				"id": 5,
+				"name": "World",
+				"items": [
+					{
+						"id": 6,
+						"name": "Hello Pussy world"
+					}
+				]
+			}
+		]
+	}
+]
