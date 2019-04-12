@@ -1,46 +1,63 @@
 import * as React from "react";
-import { View, Text } from "react-sketchapp";
+import { View, Text, StyleSheet } from "react-sketchapp";
 import chroma from "chroma-js";
 import { variables } from "../../Styles/globalStyles";
 
+const styles = StyleSheet.create({
+	swatchContainer: {
+		marginRight: 10,
+		marginBottom: 10,
+		flexDirection: "column",
+		justifyContent: "flex-start",
+		padding: 5,
+	},
+	swatchColor: {},
+	swatchDetails: {
+		marginTop: 10,
+		width: "55",
+		flexDirection: "row",
+		flexWrap: "wrap",
+	},
+});
+
 const Swatch = ({ name, hex }) => (
-	<View
-		name={`Swatch ${name}`}
-		style={{
-			height: "55",
-			width: "55",
-			marginRight: 10,
-			marginBottom: 10,
-			//flex: 1,
-			//alignItems; "center",
-			flexDirection: "column",
-			justifyContent: "space-between",
-			//flexWrap: "wrap",
-			backgroundColor: hex,
-			padding: 5,
-		}}
-	>
-		<Text
-			name="Swatch Name"
+	<View name={`Swatch ${name}`} style={styles.swatchContainer}>
+		<View
 			style={{
-				color: textColor(hex),
-				fontWeight: "bold",
-				fontSize: 9,
-				fontFamily: variables.fonts.bodyFont,
+				//flex: 1,
+				//alignItems; "center",
+
+				//flexWrap: "wrap",
+				height: "55",
+				width: "55",
+				backgroundColor: hex,
+				padding: 5,
 			}}
 		>
-			{name}
-		</Text>
-		<Text
-			name="Swatch Hex"
-			style={{
-				color: textColor(hex),
-				fontSize: 9,
-				fontFamily: variables.fonts.bodyFont,
-			}}
-		>
-			{hex}
-		</Text>
+			<Text
+				style={{
+					color: textColor(hex),
+					fontFamily: variables.fonts.bodyFont,
+
+					fontSize: 10,
+				}}
+			>
+				{hex}
+			</Text>
+		</View>
+		<View style={styles.swatchDetails}>
+			<Text
+				name="Swatch Name"
+				style={{
+					color: variables.colors.dark,
+					fontWeight: "bold",
+					fontSize: 9,
+					fontFamily: variables.fonts.bodyFont,
+				}}
+			>
+				{name}
+			</Text>
+		</View>
 	</View>
 );
 

@@ -48267,51 +48267,72 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj["default"] = obj; return newObj; } }
 
+var styles = _reactSketchapp.StyleSheet.create({
+	swatchContainer: {
+		marginRight: 10,
+		marginBottom: 10,
+		flexDirection: "column",
+		justifyContent: "flex-start",
+		padding: 5
+	},
+	swatchColor: {},
+	swatchDetails: {
+		marginTop: 10,
+		width: "55",
+		flexDirection: "row",
+		flexWrap: "wrap"
+	}
+});
+
 var Swatch = function Swatch(_ref) {
 	var name = _ref.name,
 	    hex = _ref.hex;
 	return React.createElement(
 		_reactSketchapp.View,
-		{
-			name: "Swatch " + String(name),
-			style: {
-				height: "55",
-				width: "55",
-				marginRight: 10,
-				marginBottom: 10,
-				//flex: 1,
-				//alignItems; "center",
-				flexDirection: "column",
-				justifyContent: "space-between",
-				//flexWrap: "wrap",
-				backgroundColor: hex,
-				padding: 5
-			}
-		},
+		{ name: "Swatch " + String(name), style: styles.swatchContainer },
 		React.createElement(
-			_reactSketchapp.Text,
+			_reactSketchapp.View,
 			{
-				name: "Swatch Name",
 				style: {
-					color: textColor(hex),
-					fontWeight: "bold",
-					fontSize: 9,
-					fontFamily: _globalStyles.variables.fonts.bodyFont
+					//flex: 1,
+					//alignItems; "center",
+
+					//flexWrap: "wrap",
+					height: "55",
+					width: "55",
+					backgroundColor: hex,
+					padding: 5
 				}
 			},
-			name
+			React.createElement(
+				_reactSketchapp.Text,
+				{
+					style: {
+						color: textColor(hex),
+						fontFamily: _globalStyles.variables.fonts.bodyFont,
+
+						fontSize: 10
+					}
+				},
+				hex
+			)
 		),
 		React.createElement(
-			_reactSketchapp.Text,
-			{
-				name: "Swatch Hex",
-				style: {
-					color: textColor(hex),
-					fontSize: 9,
-					fontFamily: _globalStyles.variables.fonts.bodyFont
-				}
-			},
-			hex
+			_reactSketchapp.View,
+			{ style: styles.swatchDetails },
+			React.createElement(
+				_reactSketchapp.Text,
+				{
+					name: "Swatch Name",
+					style: {
+						color: _globalStyles.variables.colors.dark,
+						fontWeight: "bold",
+						fontSize: 9,
+						fontFamily: _globalStyles.variables.fonts.bodyFont
+					}
+				},
+				name
+			)
 		)
 	);
 };
