@@ -9,7 +9,7 @@ import {
 	Page,
 	StyleSheet,
 } from "react-sketchapp";
-import chroma from "chroma-js";
+
 import CoverPage from "./components/Pages/Cover";
 import Section from "./components/Elements/Section";
 import Swatch from "./components/Elements/Swatch";
@@ -68,17 +68,6 @@ const mainStyles = StyleSheet.create({
 		color: "blue",
 	},
 });
-
-// take a hex and give us a nice text color to put over it
-const textColor = hex => {
-	const vsWhite = chroma.contrast(hex, "white");
-	if (vsWhite > 4) {
-		return "#FFF";
-	}
-	return chroma(hex)
-		.darken(3)
-		.hex();
-};
 
 const Color = {
 	hex: PropTypes.string.isRequired,
