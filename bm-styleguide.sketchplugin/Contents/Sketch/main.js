@@ -7707,10 +7707,10 @@ var baseWidth = 594;
 
 var mainStyles = _reactSketchapp.StyleSheet.create({
 	board: {
-		marginTop: 30,
+		//marginTop: 30,
 		marginBottom: 30,
 		padding: 20,
-		paddingTop: 35,
+		//paddingTop: 35,
 		//paddingLeft: 30,
 		height: 592,
 		width: 842,
@@ -7747,29 +7747,13 @@ var mainStyles = _reactSketchapp.StyleSheet.create({
 });
 
 var colorItem = Object.keys(_colors2["default"]).map(function (item) {
-	return React.createElement(
-		React.Fragment,
-		null,
-		React.createElement(
-			_reactSketchapp.Text,
-			{ key: item },
-			_colors2["default"].name
-		),
-		String(_colors2["default"][item].colors.map(function (subitem) {
-			return subitem.hexcode;
-		})),
-		React.createElement(_SubSection2["default"], {
-			key: item,
-			label: _colors2["default"][item].name,
-			content: _colors2["default"][item].colors.map(function (subitem) {
-				return React.createElement(_Swatch2["default"], {
-					key: subitem,
-					name: subitem.value,
-					hex: subitem.hexcode
-				});
-			})
+	return React.createElement(_SubSection2["default"], {
+		key: item,
+		label: _colors2["default"][item].name,
+		content: _colors2["default"][item].colors.map(function (subitem) {
+			return React.createElement(_Swatch2["default"], { key: subitem, name: subitem.value, hex: subitem.hexcode });
 		})
-	);
+	});
 });
 
 var Document = function Document() {
@@ -45389,13 +45373,9 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 var styles = _reactSketchapp.StyleSheet.create({
 	swatchContainer: {
-		marginRight: 10,
-		marginBottom: 10,
 		flexDirection: "column",
 		justifyContent: "flex-start"
-		//padding: 5,
 	},
-	swatchColor: {},
 	swatchDetails: {
 		marginTop: 10,
 		width: "55",
@@ -48292,12 +48272,13 @@ var styles = _reactSketchapp.StyleSheet.create({
 	label: {
 		fontFamily: _globalStyles.variables.fonts.bodyFont,
 		fontSize: _globalStyles.variables.sizes.h5,
-		color: _globalStyles.variables.colors.dark
+		color: _globalStyles.variables.colors.dark,
+		width: "25%"
 	},
 	section: {
-		flexDirection: "column",
+		flexDirection: "row",
 		marginTop: 20,
-		//marginBottom: 20,
+		marginBottom: 20,
 		width: "100%"
 	},
 	container: {
@@ -48315,28 +48296,19 @@ var styles = _reactSketchapp.StyleSheet.create({
 
 var SubSection = function SubSection(_ref) {
 	var label = _ref.label,
-	    content = _ref.content,
-	    extraStyles = _ref.extraStyles;
+	    content = _ref.content;
 	return React.createElement(
 		_reactSketchapp.View,
-		{ style: (styles.section, extraStyles) },
+		{ name: "Sub Section", style: styles.section },
+		React.createElement(
+			_reactSketchapp.Text,
+			{ name: "Label", style: styles.label },
+			label
+		),
 		React.createElement(
 			_reactSketchapp.View,
-			{ style: styles.container },
-			React.createElement(
-				_reactSketchapp.View,
-				{ style: styles.panelLeft },
-				React.createElement(
-					_reactSketchapp.Text,
-					{ style: styles.label },
-					label
-				)
-			),
-			React.createElement(
-				_reactSketchapp.View,
-				{ style: styles.panelRight },
-				content
-			)
+			{ name: "Panel Right", style: styles.panelRight },
+			content
 		)
 	);
 };
@@ -48376,15 +48348,17 @@ var styles = _reactSketchapp.StyleSheet.create({
 		borderTopWidth: 2.5,
 		borderTopColor: _globalStyles.variables.colors.dark,
 		borderStyle: "solid",
-		paddingTop: 30,
-		marginTop: 5
+		marginBottom: 10,
+		//paddingTop: 30,
+		//marginTop: 5,
+		width: "100%"
 	},
 	section: {
-		flexDirection: "row",
-		width: "100%",
+		flexDirection: "column",
+		width: "100%"
 
-		paddingTop: 30,
-		marginTop: 5
+		//paddingTop: 30,
+		//marginTop: 5,
 	},
 	container: {
 		flexDirection: "row",

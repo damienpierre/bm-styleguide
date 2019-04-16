@@ -5,13 +5,9 @@ import { variables } from "../../Styles/globalStyles";
 
 const styles = StyleSheet.create({
 	swatchContainer: {
-		marginRight: 10,
-		marginBottom: 10,
 		flexDirection: "column",
 		justifyContent: "flex-start",
-		//padding: 5,
 	},
-	swatchColor: {},
 	swatchDetails: {
 		marginTop: 10,
 		width: "55",

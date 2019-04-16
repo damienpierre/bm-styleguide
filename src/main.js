@@ -17,10 +17,10 @@ let baseWidth = 594;
 
 const mainStyles = StyleSheet.create({
 	board: {
-		marginTop: 30,
+		//marginTop: 30,
 		marginBottom: 30,
 		padding: 20,
-		paddingTop: 35,
+		//paddingTop: 35,
 		//paddingLeft: 30,
 		height: 592,
 		width: 842,
@@ -64,23 +64,13 @@ const mainStyles = StyleSheet.create({
 });
 
 const colorItem = Object.keys(colorList).map(item => (
-	<React.Fragment>
-		<Text key={item}>{colorList.name}</Text>
-
-		{String(colorList[item].colors.map(subitem => subitem.hexcode))}
-
-		<SubSection
-			key={item}
-			label={colorList[item].name}
-			content={colorList[item].colors.map(subitem => (
-				<Swatch
-					key={subitem}
-					name={subitem.value}
-					hex={subitem.hexcode}
-				/>
-			))}
-		/>
-	</React.Fragment>
+	<SubSection
+		key={item}
+		label={colorList[item].name}
+		content={colorList[item].colors.map(subitem => (
+			<Swatch key={subitem} name={subitem.value} hex={subitem.hexcode} />
+		))}
+	/>
 ));
 
 const Document = () => (

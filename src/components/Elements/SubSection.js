@@ -24,11 +24,12 @@ const styles = StyleSheet.create({
 		fontFamily: variables.fonts.bodyFont,
 		fontSize: variables.sizes.h5,
 		color: variables.colors.dark,
+		width: "25%",
 	},
 	section: {
-		flexDirection: "column",
+		flexDirection: "row",
 		marginTop: 20,
-		//marginBottom: 20,
+		marginBottom: 20,
 		width: "100%",
 	},
 	container: {
@@ -44,13 +45,13 @@ const styles = StyleSheet.create({
 	},
 });
 
-const SubSection = ({ label, content, extraStyles }) => (
-	<View style={(styles.section, extraStyles)}>
-		<View style={styles.container}>
-			<View style={styles.panelLeft}>
-				<Text style={styles.label}>{label}</Text>
-			</View>
-			<View style={styles.panelRight}>{content}</View>
+const SubSection = ({ label, content }) => (
+	<View name="Sub Section" style={styles.section}>
+		<Text name="Label" style={styles.label}>
+			{label}
+		</Text>
+		<View name="Panel Right" style={styles.panelRight}>
+			{content}
 		</View>
 	</View>
 );

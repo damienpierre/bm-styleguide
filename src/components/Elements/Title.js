@@ -14,15 +14,17 @@ const styles = StyleSheet.create({
 		borderTopWidth: 2.5,
 		borderTopColor: variables.colors.dark,
 		borderStyle: "solid",
-		paddingTop: 30,
-		marginTop: 5,
+		marginBottom: 10,
+		//paddingTop: 30,
+		//marginTop: 5,
+		width: "100%",
 	},
 	section: {
-		flexDirection: "row",
+		flexDirection: "column",
 		width: "100%",
 
-		paddingTop: 30,
-		marginTop: 5,
+		//paddingTop: 30,
+		//marginTop: 5,
 	},
 	container: {
 		flexDirection: "row",
