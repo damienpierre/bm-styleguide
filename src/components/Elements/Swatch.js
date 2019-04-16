@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
 		marginBottom: 10,
 		flexDirection: "column",
 		justifyContent: "flex-start",
-		padding: 5,
+		//padding: 5,
 	},
 	swatchColor: {},
 	swatchDetails: {
@@ -24,14 +24,11 @@ const Swatch = ({ name, hex }) => (
 	<View name={`Swatch ${name}`} style={styles.swatchContainer}>
 		<View
 			style={{
-				//flex: 1,
-				//alignItems; "center",
-
-				//flexWrap: "wrap",
-				height: "55",
-				width: "55",
+				height: "60",
+				width: "60",
 				backgroundColor: hex,
 				padding: 5,
+				borderRadius: 3,
 			}}
 		>
 			<Text

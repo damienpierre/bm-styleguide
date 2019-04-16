@@ -1,48 +1,28 @@
-[
-	{
-		"id": 1,
+{
+	"primary": {
+		"name": "Gray",
+		"colors": [
+			{ "hexcode": "#333333", "value": "800" },
+			{ "hexcode": "#666666", "value": "700" },
+			{ "hexcode": "#999999", "value": "600" },
+			{ "hexcode": "#AAAAAA", "value": "500" },
+			{ "hexcode": "#CCCCCC", "value": "400" },
+			{ "hexcode": "#DDDDDD", "value": "300" },
+			{ "hexcode": "#E6E6E6", "value": "200" },
+			{ "hexcode": "#F6F6F6", "value": "100" }
+		]
+	},
+	"secondary": {
 		"name": "Blue",
-		"items": [
-			{
-				"id": 2,
-				"name": "Kitty Muu Muu"
-			},
-			{
-				"id": 3,
-				"name": "Kitty smack"
-			}
-		]
-	},
-	{
-		"id": 2,
-		"name": "Yello",
-		"items": [
-			{
-				"id": 5,
-				"name": "World",
-				"items": [
-					{
-						"id": 6,
-						"name": "Hello Pussy world"
-					}
-				]
-			}
-		]
-	},
-	{
-		"id": 3,
-		"name": "Green",
-		"items": [
-			{
-				"id": 5,
-				"name": "World",
-				"items": [
-					{
-						"id": 6,
-						"name": "Hello Pussy world"
-					}
-				]
-			}
+		"colors": [
+			{ "hexcode": "#faaf1b", "value": "800" },
+			{ "hexcode": "#333333", "value": "700" },
+			{ "hexcode": "#FF3300", "value": "600" },
+			{ "hexcode": "#FF3300", "value": "500" },
+			{ "hexcode": "#FF3300", "value": "400" },
+			{ "hexcode": "#FF3300", "value": "300" },
+			{ "hexcode": "#FF3300", "value": "200" },
+			{ "hexcode": "#FF3300", "value": "100" }
 		]
 	}
-]
+}
