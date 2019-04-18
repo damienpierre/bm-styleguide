@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
 	},
 	section: {
 		flexDirection: "row",
-		marginTop: 20,
+		//marginTop: 20,
 		marginBottom: 20,
 		width: "100%",
 	},

@@ -20,7 +20,7 @@ const Swatch = ({ name, hex }) => (
 	<View name={`Swatch ${name}`} style={styles.swatchContainer}>
 		<View
 			style={{
-				height: "60",
+				height: "40",
 				width: "60",
 				backgroundColor: hex,
 				padding: 5,
@@ -32,7 +32,7 @@ const Swatch = ({ name, hex }) => (
 					color: textColor(hex),
 					fontFamily: variables.fonts.bodyFont,
 
-					fontSize: 10,
+					fontSize: 8,
 				}}
 			>
 				{hex}

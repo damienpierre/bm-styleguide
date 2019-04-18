@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
 		borderTopWidth: 2.5,
 		borderTopColor: variables.colors.dark,
 		borderStyle: "solid",
-		marginBottom: 10,
+		marginBottom: 20,
 		//paddingTop: 30,
 		//marginTop: 5,
 		width: "100%",

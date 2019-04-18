@@ -45394,7 +45394,7 @@ var Swatch = function Swatch(_ref) {
 			_reactSketchapp.View,
 			{
 				style: {
-					height: "60",
+					height: "40",
 					width: "60",
 					backgroundColor: hex,
 					padding: 5,
@@ -45408,7 +45408,7 @@ var Swatch = function Swatch(_ref) {
 						color: textColor(hex),
 						fontFamily: _globalStyles.variables.fonts.bodyFont,
 
-						fontSize: 10
+						fontSize: 8
 					}
 				},
 				hex
@@ -48228,7 +48228,7 @@ module.exports = function(module) {
 /* 228 */
 /***/ (function(module, exports) {
 
-module.exports = {"primary":{"name":"Gray","colors":[{"hexcode":"#333333","value":"800"},{"hexcode":"#666666","value":"700"},{"hexcode":"#999999","value":"600"},{"hexcode":"#AAAAAA","value":"500"},{"hexcode":"#CCCCCC","value":"400"},{"hexcode":"#DDDDDD","value":"300"},{"hexcode":"#E6E6E6","value":"200"},{"hexcode":"#F6F6F6","value":"100"}]},"secondary":{"name":"Blue","colors":[{"hexcode":"#faaf1b","value":"800"},{"hexcode":"#333333","value":"700"},{"hexcode":"#FF3300","value":"600"},{"hexcode":"#FF3300","value":"500"},{"hexcode":"#FF3300","value":"400"},{"hexcode":"#FF3300","value":"300"},{"hexcode":"#FF3300","value":"200"},{"hexcode":"#FF3300","value":"100"}]}}
+module.exports = {"1":{"name":"Gray","colors":[{"hexcode":"#333333","value":"800"},{"hexcode":"#666666","value":"700"},{"hexcode":"#999999","value":"600"},{"hexcode":"#AAAAAA","value":"500"},{"hexcode":"#CCCCCC","value":"400"},{"hexcode":"#DDDDDD","value":"300"},{"hexcode":"#E6E6E6","value":"200"},{"hexcode":"#F6F6F6","value":"100"}]},"2":{"name":"Blue","colors":[{"hexcode":"#0077CC","value":"800"},{"hexcode":"#1188EE","value":"700"},{"hexcode":"#44AAFF","value":"600"},{"hexcode":"#77BBFF","value":"500"},{"hexcode":"#AAD6FF","value":"400"},{"hexcode":"#CAE6FF","value":"300"},{"hexcode":"#DFF0FF","value":"200"},{"hexcode":"#EEF6FF","value":"100"}]},"3":{"name":"Green","colors":[{"hexcode":"#118800","value":"800"},{"hexcode":"#33A300","value":"700"},{"hexcode":"#55BB22","value":"600"},{"hexcode":"#88D633","value":"500"},{"hexcode":"#AAEE88","value":"400"},{"hexcode":"#C3F3B0","value":"300"},{"hexcode":"#E3FCDC","value":"200"},{"hexcode":"#F0FFEC","value":"100"}]},"4":{"name":"red","colors":[{"hexcode":"#BB3300","value":"800"},{"hexcode":"#DD4422","value":"700"},{"hexcode":"#EE6644","value":"600"},{"hexcode":"#FF7766","value":"500"},{"hexcode":"#FF9F8C","value":"400"},{"hexcode":"#FFC3BC","value":"300"},{"hexcode":"#FFE6E3","value":"200"},{"hexcode":"#FFF3F3","value":"100"}]},"5":{"name":"Yellow","colors":[{"hexcode":"#997711","value":"800"},{"hexcode":"#BF9C00","value":"700"},{"hexcode":"#EEBB22","value":"600"},{"hexcode":"#FFD333","value":"500"},{"hexcode":"#FFE677","value":"400"},{"hexcode":"#FFFABB","value":"300"},{"hexcode":"#FFFFDD","value":"200"},{"hexcode":"#FFFFEC","value":"100"}]},"6":{"name":"Orange","colors":[{"hexcode":"#BB6600","value":"800"},{"hexcode":"#DD7711","value":"700"},{"hexcode":"#EE9911","value":"600"},{"hexcode":"#FFAA11","value":"500"},{"hexcode":"#FFBB55","value":"400"},{"hexcode":"#FFD099","value":"300"},{"hexcode":"#FFEFDC","value":"200"},{"hexcode":"#FFF6EC","value":"100"}]}}
 
 /***/ }),
 /* 229 */
@@ -48277,7 +48277,7 @@ var styles = _reactSketchapp.StyleSheet.create({
 	},
 	section: {
 		flexDirection: "row",
-		marginTop: 20,
+		//marginTop: 20,
 		marginBottom: 20,
 		width: "100%"
 	},
@@ -48348,7 +48348,7 @@ var styles = _reactSketchapp.StyleSheet.create({
 		borderTopWidth: 2.5,
 		borderTopColor: _globalStyles.variables.colors.dark,
 		borderStyle: "solid",
-		marginBottom: 10,
+		marginBottom: 20,
 		//paddingTop: 30,
 		//marginTop: 5,
 		width: "100%"
