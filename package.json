@@ -16,7 +16,7 @@
   "author": "Damien Pierre <damien.pierre@bettermarks.com>",
   "license": "MIT",
   "devDependencies": {
-    "@skpm/builder": "^0.4.0"
+    "@skpm/builder": "^0.8.0"
   },
   "dependencies": {
     "chroma-js": "^1.2.2",
